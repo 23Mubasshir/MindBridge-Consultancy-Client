@@ -1,7 +1,8 @@
 const Footer = () => {
   return (
     <div>
-      <footer className="footer p-10 bg-black text-white px-96">
+        {/* To-Do: update image background, ap */}
+      <footer className="footer p-10 bg-black text-white md:px-32 lg:px-96">
         <div>
           <span className="footer-title">Services</span>
           <a className="link link-hover">Branding</a>
@@ -34,9 +35,9 @@ const Footer = () => {
               <input
                 type="text"
                 placeholder="username@site.com"
-                className="input w-full pr-16 rounded-none"
+                className="input w-full pr-16 rounded-none border-none"
               />
-              <button className="btn bg-red-700 border-red-900 rounded-none text-white absolute top-0 right-0 hover:text-black">
+              <button className="btn bg-red-700 border-none rounded-none text-white absolute top-0 right-0 hover:text-black">
                 Subscribe
               </button>
             </div>
