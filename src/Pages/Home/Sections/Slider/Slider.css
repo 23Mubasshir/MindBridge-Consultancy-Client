@@ -1,0 +1,8 @@
+.slide-btn{
+background-color: transparent;
+color: white;
+}
+
+.slide-btn:hover{
+color: black;
+}

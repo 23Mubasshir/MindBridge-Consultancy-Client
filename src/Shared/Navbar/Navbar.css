@@ -1,0 +1,18 @@
+.menu a {
+  font-size: 20px;
+  
+}
+
+.menu a:hover {
+  color: #b80000;
+  background: transparent;
+}
+
+.link-style {
+  font-size: 20px;
+}
+
+.link-style:hover {
+  color: #b80000;
+  background: transparent;
+}
