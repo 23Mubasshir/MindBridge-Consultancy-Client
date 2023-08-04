@@ -1,0 +1,10 @@
+.about-box{
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.about-box:hover{
+    background: rgb(165, 2, 29);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.1);
+  }
