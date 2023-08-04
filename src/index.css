@@ -41,5 +41,5 @@
 .button:hover{
   cursor: pointer;
   transform: scale(1.1);
-  background: rgba(141, 2, 2, 0.781);
+  background: rgb(116, 2, 2);
 }
