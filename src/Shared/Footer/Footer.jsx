@@ -1,7 +1,22 @@
 const Footer = () => {
   return (
     <div>
-        {/* To-Do: update image background, ap */}
+      {/* To-Do: update image background, add logo */}
+      <div className="md:h-[300px] bg-[---primary-color] grid md:grid-cols-2 py-12">
+
+        <div className="text-center my-auto mb-24 md:mb-0">
+          <h1 className="text-5xl text-white 
+          mx-24 leading-[60px]" >Let&apos;s Work to Boost Your Business. </h1>
+          <button className="button-outline mt-6">Contact</button>
+        </div>
+
+        <div className="text-center my-auto">
+          <h1 className="text-5xl text-white 
+          mx-24 leading-[60px]" > Want to Plan strategically for your Business ?  </h1>
+          <button className="button-outline mt-6">Let&apos;s Talk</button>
+        </div>
+
+      </div>
       <footer className="footer p-10 bg-black text-white md:px-32 lg:px-96">
         <div>
           <span className="footer-title">Services</span>
@@ -37,7 +52,7 @@ const Footer = () => {
                 placeholder="username@site.com"
                 className="input w-full pr-16 rounded-none border-none"
               />
-              <button className="btn bg-red-700 border-none rounded-none text-white absolute top-0 right-0 hover:text-black">
+              <button className="btn bg-[---primary-color] border-none rounded-none text-white absolute top-0 right-0 hover:text-black">
                 Subscribe
               </button>
             </div>
