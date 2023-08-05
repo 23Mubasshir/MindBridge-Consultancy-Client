@@ -3,19 +3,24 @@ const Footer = () => {
     <div>
       {/* To-Do: update image background, add logo */}
       <div className="md:h-[300px] bg-[---primary-color] grid md:grid-cols-2 py-12">
-
         <div className="text-center my-auto mb-24 md:mb-0">
-          <h1 className="text-3xl md:text-5xl text-white mx-12 
-          md:mx-24 leading-[60px]" >Let&apos;s Work to Boost Your Business. </h1>
+          <h1
+            className="text-3xl md:text-5xl text-white mx-12 md:mx-24">
+            Let&apos;s Work to Boost Your <br /> Business.{" "}
+          </h1>
           <button className="button-outline mt-6">Contact</button>
         </div>
 
-        <div className="text-3xl text-center my-auto">
-          <h1 className="md:text-5xl text-white mx-12 
-          md:mx-24 leading-[60px]" > Want to Plan strategically for your Business ?  </h1>
+        <div className="text-center my-auto mb-24 md:mb-0">
+          <h1
+            className="text-3xl md:text-5xl text-white mx-12 
+          md:mx-24"
+          >
+            Plan strategically for your <br />
+            Business
+          </h1>
           <button className="button-outline mt-6">Let&apos;s Talk</button>
         </div>
-
       </div>
       <footer className="footer p-10 bg-black text-white md:px-32 lg:px-96">
         <div>
