@@ -1,9 +1,27 @@
+// import { useState } from "react";
 import "./Navbar.css"
+import { Link } from "react-router-dom";
+import  logo  from "../../../src/assets/growth.png"
 
 const Navbar = () => {
+
+  //change nav color when scrolling
+//   const [color, setColor]= useState(false);
+//   const changeColor = () =>{
+//     if (window.scrollY >= 90){
+//       setColor(true);
+//     }
+//     else{
+//       setColor(false);
+//     }
+//   }
+// window.addEventListener("scroll", changeColor)
+
+
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar h-28 sticky z-50 top-0 bg-white lg:px-24 shadow-xl"  >
       <div className="navbar-start">
+
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
             <svg
@@ -25,28 +43,61 @@ const Navbar = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
-            <li>
+            <li className="pt-2">
               <a href="/">Home</a>
             </li>
-            <li>
+            <li className="pt-2">
+              <a href="/">Sign In</a>
+            </li>
+            <li className="pt-2">
+              <a href="/">Sign Up</a>
+            </li>
+            <li className="pt-2">
               <a>Consulting Services</a>
-              <ul className="p-2">
-                <li>
-                  <a>service-1</a>
+              <ul className="p-2 leading-[12px]">
+                <li >
+                  <a>Strategy consulting</a>
                 </li>
-                <li>
-                  <a>service-2</a>
+                <li >
+                  <a>Marketing consulting</a>
+                </li>
+                <li >
+                  <a>Operations consulting</a>
+                </li>
+                <li >
+                  <a>Financial consulting</a>
+                </li>
+                <li >
+                  <a>IT/ Technology consulting</a>
+                </li>
+                <li >
+                  <a>Legal consulting</a>
                 </li>
               </ul>
             </li>
-            <li>
+            <li className="pt-2">
               <a>Industries</a>
-              <ul className="p-2">
-                <li>
-                  <a>Industry-1</a>
+              <ul className="p-2 leading-[28px]">
+              <li>
+                  <a>Startup Sector</a>
                 </li>
                 <li>
-                  <a>Industry-2</a>
+                  <a>Marketing Sector</a>
+                </li>
+                <li>
+                  <a>Operations consulting</a>
+                </li>
+                <li>
+                  <a>Financial Sector</a>
+                </li>
+                <li>
+                  <a>IT/ Technology Sector</a>
+                </li>
+                <li>
+                  <a>Legal Sector</a>
+                </li>
+                <li>
+                  <a>B2B Sector</a>
                 </li>
               </ul>
             </li>
@@ -58,7 +109,17 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+        <div className="flex justify-center">
+              <img src={logo} alt="" className=" w-[60px] h-[60px] mx-2" />
+
+              <h1 className="text-center font-bold md:text-[28px] text-[20px] md:leading-8 ">
+                {" "}
+                <span className="text-red-700 text-[20px] md:text-[30px]">
+                  MINDBRIDGE
+                </span>{" "}
+                <br /> CONSULTANCY
+              </h1>
+            </div>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 gap-4">
@@ -68,12 +129,24 @@ const Navbar = () => {
           <li tabIndex={0}>
             <details>
               <summary className="link-style">Consulting Services</summary>
-              <ul className="p-2">
-                <li>
-                  <a>Industry-1</a>
+              <ul className="leading-[28px]">
+              <li className="">
+                  <a>Strategy consulting</a>
                 </li>
                 <li>
-                  <a>Industry-2</a>
+                  <a>Marketing consulting</a>
+                </li>
+                <li>
+                  <a>Operations consulting</a>
+                </li>
+                <li>
+                  <a>Financial consulting</a>
+                </li>
+                <li>
+                  <a>IT/ Technology consulting</a>
+                </li>
+                <li>
+                  <a>Legal consulting</a>
                 </li>
               </ul>
             </details>
@@ -81,12 +154,27 @@ const Navbar = () => {
           <li tabIndex={1}>
             <details>
               <summary className="link-style">Industries</summary>
-              <ul className="p-2">
-                <li>
-                  <a>service-1</a>
+              <ul className="p-2 leading-[28px]">
+              <li>
+                  <a>Startup Sector</a>
                 </li>
                 <li>
-                  <a>service-2</a>
+                  <a>Marketing Sector</a>
+                </li>
+                <li>
+                  <a>Operations consulting</a>
+                </li>
+                <li>
+                  <a>Financial Sector</a>
+                </li>
+                <li>
+                  <a>IT/ Technology Sector</a>
+                </li>
+                <li>
+                  <a>Legal Sector</a>
+                </li>
+                <li>
+                  <a>B2B Sector</a>
                 </li>
               </ul>
             </details>
@@ -100,7 +188,8 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Button</a>
+        <Link to="/sign-in" ><button className="red-button-outline mx-3 hidden md:block">Sign In</button></Link>
+        <Link to="/sign-up" ><button className="red-button-outline mx-3 hidden md:block">Sign Up</button></Link>
       </div>
     </div>
   );

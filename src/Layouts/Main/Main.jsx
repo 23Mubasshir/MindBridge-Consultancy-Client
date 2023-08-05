@@ -6,6 +6,7 @@ const Main = () => {
     return (
         // To-do: Make github public.
         <div>
+            
             <Navbar></Navbar>
             <Outlet></Outlet>
             <Footer></Footer>
