@@ -36,7 +36,7 @@ const OneToOneSession = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[---primary-color] flex py-20 justify-center items-center">
+      <div className="bg-[---primary-color] flex py-20 justify-center items-center mb-20">
         <h1 className="text-2xl px-12 md:text-4xl lg:text-5xl text-white md:pe-10 lg:pe-72">
           Let&apos;s have a Free one on one session.
         </h1>
