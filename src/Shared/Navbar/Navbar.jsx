@@ -1,13 +1,11 @@
-
-import "./Navbar.css"
+import "./Navbar.css";
 import { Link } from "react-router-dom";
-import  logo  from "../../../src/assets/growth.png"
+import logo from "../../../src/assets/growth.png";
 import { useContext } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { FaRegUserCircle } from "react-icons/fa";
 
 const Navbar = () => {
-
   const { user, logOut } = useContext(AuthContext);
 
   //* <-----Log-out function-----> */
@@ -16,26 +14,23 @@ const Navbar = () => {
       .then(() => {})
       .catch((error) => console.error(error));
   };
-  console.log(user);
-
+  
 
   //change nav color when scrolling
-//   const [color, setColor]= useState(false);
-//   const changeColor = () =>{
-//     if (window.scrollY >= 90){
-//       setColor(true);
-//     }
-//     else{
-//       setColor(false);
-//     }
-//   }
-// window.addEventListener("scroll", changeColor)
-
+  //   const [color, setColor]= useState(false);
+  //   const changeColor = () =>{
+  //     if (window.scrollY >= 90){
+  //       setColor(true);
+  //     }
+  //     else{
+  //       setColor(false);
+  //     }
+  //   }
+  // window.addEventListener("scroll", changeColor)
 
   return (
-    <div className="navbar h-28 sticky z-50 top-0 bg-white lg:px-24 shadow-xl"  >
+    <div className="navbar h-28 sticky z-50 top-0 bg-white lg:px-24 shadow-xl">
       <div className="navbar-start">
-
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
             <svg
@@ -66,36 +61,30 @@ const Navbar = () => {
             <li className="pt-2">
               <a href="/sign-up">Sign Up</a>
             </li>
+            <li className="pt-2">
+            <a href="/bookings">Bookings</a>
+          </li>
             <li className="pt-2" onClick={handleLogout}>
               <a href="/">Log out</a>
             </li>
             <li className="pt-2">
               <a>Consulting Services</a>
               <ul className="p-2 leading-[12px]">
-                <li >
+                <li>
                   <a>Strategy consulting</a>
                 </li>
-                <li >
+                <li>
                   <a>Marketing consulting</a>
                 </li>
-                <li >
+                <li>
                   <a>Operations consulting</a>
-                </li>
-                <li >
-                  <a>Financial consulting</a>
-                </li>
-                <li >
-                  <a>IT/ Technology consulting</a>
-                </li>
-                <li >
-                  <a>Legal consulting</a>
                 </li>
               </ul>
             </li>
             <li className="pt-2">
               <a>Industries</a>
               <ul className="p-2 leading-[28px]">
-              <li>
+                <li>
                   <a>Startup Sector</a>
                 </li>
                 <li>
@@ -104,39 +93,27 @@ const Navbar = () => {
                 <li>
                   <a>Operations consulting</a>
                 </li>
-                <li>
-                  <a>Financial Sector</a>
-                </li>
-                <li>
-                  <a>IT/ Technology Sector</a>
-                </li>
-                <li>
-                  <a>Legal Sector</a>
-                </li>
-                <li>
-                  <a>B2B Sector</a>
-                </li>
               </ul>
             </li>
             <li>
               <a>About</a>
             </li>
             <li>
-              <a>Contact</a>
+              <a href="/bookings">Bookings</a>
             </li>
           </ul>
         </div>
         <div className="flex justify-center">
-              <img src={logo} alt="" className=" w-[60px] h-[60px] mx-2" />
+          <img src={logo} alt="" className=" w-[60px] h-[60px] mx-2" />
 
-              <h1 className="text-center font-bold md:text-[28px] text-[20px] md:leading-8 ">
-                {" "}
-                <span className="text-red-700 text-[20px] md:text-[30px]">
-                  MINDBRIDGE
-                </span>{" "}
-                <br /> CONSULTANCY
-              </h1>
-            </div>
+          <h1 className="text-center font-bold md:text-[28px] text-[20px] md:leading-8 ">
+            {" "}
+            <span className="text-red-700 text-[20px] md:text-[30px]">
+              MINDBRIDGE
+            </span>{" "}
+            <br /> CONSULTANCY
+          </h1>
+        </div>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 gap-4">
@@ -147,7 +124,7 @@ const Navbar = () => {
             <details>
               <summary className="link-style">Consulting Services</summary>
               <ul className="leading-[28px]">
-              <li className="">
+                <li className="">
                   <a>Strategy consulting</a>
                 </li>
                 <li>
@@ -156,15 +133,6 @@ const Navbar = () => {
                 <li>
                   <a>Operations consulting</a>
                 </li>
-                <li>
-                  <a>Financial consulting</a>
-                </li>
-                <li>
-                  <a>IT/ Technology consulting</a>
-                </li>
-                <li>
-                  <a>Legal consulting</a>
-                </li>
               </ul>
             </details>
           </li>
@@ -172,7 +140,7 @@ const Navbar = () => {
             <details>
               <summary className="link-style">Industries</summary>
               <ul className="p-2 leading-[28px]">
-              <li>
+                <li>
                   <a>Startup Sector</a>
                 </li>
                 <li>
@@ -181,18 +149,6 @@ const Navbar = () => {
                 <li>
                   <a>Operations consulting</a>
                 </li>
-                <li>
-                  <a>Financial Sector</a>
-                </li>
-                <li>
-                  <a>IT/ Technology Sector</a>
-                </li>
-                <li>
-                  <a>Legal Sector</a>
-                </li>
-                <li>
-                  <a>B2B Sector</a>
-                </li>
               </ul>
             </details>
           </li>
@@ -200,60 +156,59 @@ const Navbar = () => {
             <a>About</a>
           </li>
           <li>
-            <a>Contact</a>
+            <a href="/bookings">Bookings</a>
           </li>
+          
         </ul>
       </div>
       <div className="navbar-end hidden lg:flex">
+        {/* -----conditional user picture----- */}
+        {user ? (
+          <Link to="/" className="lg:mr-5">
+            {user ? (
+              <div className="tooltip" data-tip={user.displayName}>
+                <img
+                  style={{ height: "55px" }}
+                  className="rounded-full border-4 border-red-700 hidden lg:block"
+                  src={user.photoURL}
+                  alt={user.displayName}
+                />
+              </div>
+            ) : (
+              <FaRegUserCircle style={{ fontSize: "2.5rem" }} />
+            )}
+          </Link>
+        ) : (
+          <div></div>
+        )}
 
-
-{/* -----conditional user picture----- */}
-{user ? (
-            <Link to="/" className="lg:mr-5">
-              {user ? (
-                <div className="tooltip" data-tip={user.displayName}>
-                  <img
-                    style={{ height: "55px" }}
-                    className="rounded-full border-4 border-red-700 hidden lg:block"
-                    src={user.photoURL}
-                    alt={user.displayName}
-                  />
-                </div>
-              ) : (
-                <FaRegUserCircle style={{ fontSize: "2.5rem" }} />
-              )}
-            </Link>
-          ) : (
-            <div></div>
-          )}
-
-          {/* -----conditional sign in sign out----- */}
-          {user ? (
-            <Link
-              onClick={handleLogout}
-              className="red-button-outline lg:mx-3 hidden lg:block"
-            >
-              Logout
-            </Link>
-          ) : (
-            <Link
-              to="/sign-in"
-              className="red-button-outline lg:mx-3 hidden md:block"
-            >
-              Sign In
-            </Link>
-          )}
-          {/* -----conditional sign Up----- */}
-          {user ? (
-            <div></div>
-          ) : (
-            <Link
-              to="/sign-up"
-              className="red-button-outline lg:mx-3 hidden md:block"
-            >
-              Sign Up
-            </Link>
-          )}
+        {/* -----conditional sign in sign out----- */}
+        {user ? (
+          <Link
+            onClick={handleLogout}
+            className="red-button-outline lg:mx-3 hidden lg:block"
+          >
+            Logout
+          </Link>
+        ) : (
+          <Link
+            to="/sign-in"
+            className="red-button-outline lg:mx-3 hidden md:block"
+          >
+            Sign In
+          </Link>
+        )}
+        {/* -----conditional sign Up----- */}
+        {user ? (
+          <div></div>
+        ) : (
+          <Link
+            to="/sign-up"
+            className="red-button-outline lg:mx-3 hidden md:block"
+          >
+            Sign Up
+          </Link>
+        )}
       </div>
     </div>
   );

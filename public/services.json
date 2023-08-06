@@ -1,60 +1,50 @@
 [
     {
-      "id": 1,
       "name": "TechAdvise Consultancy",
       "short_description": "Expert advice for technology solutions and innovation strategies. We specialize in guiding businesses through the rapidly evolving tech landscape to achieve their goals.",
       "image": "https://i.ibb.co/TtCshdv/consulting-1.jpg"
     },
     {
-      "id": 2,
       "name": "FinBiz Consultants",
       "short_description": "Comprehensive financial and business advisory services tailored to your organization's unique needs. From financial planning to risk management, our experts offer strategic guidance to thrive in today's markets.",
       "image": "https://i.ibb.co/xF7jvGx/consulting-2.jpg"
     },
     {
-      "id": 3,
       "name": "GreenScape Sustainability",
       "short_description": "Embrace sustainability with GreenScape. Our consultancy helps you adopt eco-friendly practices that benefit both the environment and your bottom line.",
       "image": "https://i.ibb.co/tm1dswZ/consulting-3.jpg"
     },
     {
-      "id": 4,
       "name": "HealthWell Solutions",
       "short_description": "Navigating the complex healthcare landscape is our expertise. HealthWell Solutions offers comprehensive consultancy services that empower healthcare providers, insurers, and organizations.",
       "image": "https://i.ibb.co/j8YKfSd/consulting-4.jpg"
     },
     {
-      "id": 5,
       "name": "MarketSphere Analytics",
       "short_description": "Uncover data-driven market insights with MarketSphere Analytics. Our consultancy specializes in harnessing the power of data to provide you with a deeper understanding.",
       "image": "https://i.ibb.co/K68ZjHM/consulting-5.jpg"
     },
     {
-      "id": 6,
       "name": "LegalEase Consultants",
       "short_description": "Navigate legal complexities with confidence. LegalEase Consultants offers expert legal advice and support to businesses of all sizes.",
       "image": "https://i.ibb.co/8NzmBNZ/consulting-6.jpg"
     },
     {
-      "id": 7,
       "name": "HR Dynamics",
       "short_description": "Unlock the full potential of your workforce with HR Dynamics. Our consultancy specializes in human resources management, offering strategic guidance on talent acquisition to drive business success.",
       "image": "https://i.ibb.co/WVkKkgM/consulting-7.jpg"
     },
     {
-      "id": 8,
       "name": "GloGlobal Marketing",
       "short_description": "Capture global markets with GloGlobal Marketing. Our consultancy provides expert guidance on crafting and executing international marketing strategies.",
       "image": "https://i.ibb.co/WKkXY6K/consulting-8.jpg"
     },
     {
-      "id": 9,
       "name": "Constructive Consultants",
       "short_description": "Build a solid foundation with Constructive Consultants. Our experts offer construction and engineering advice that ensures your projects are successful from concept to completion.",
       "image": "https://i.ibb.co/WxQdsKC/consulting-9.jpg"
     },
     {
-      "id": 10,
       "name": "Tourism Trends Advisory",
       "short_description": "Navigate the dynamic tourism industry with confidence. Tourism Trends Advisory offers insights and recommendations that help you stay ahead of market trends and customer preferences.",
       "image": "https://i.ibb.co/y5JnwsG/consulting-10.jpg"
