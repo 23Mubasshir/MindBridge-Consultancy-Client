@@ -61,10 +61,13 @@ const Navbar = () => {
               <a href="/">Home</a>
             </li>
             <li className="pt-2">
-              <a href="/">Sign In</a>
+              <a href="/sign-in">Sign In</a>
             </li>
             <li className="pt-2">
-              <a href="/">Sign Up</a>
+              <a href="/sign-up">Sign Up</a>
+            </li>
+            <li className="pt-2" onClick={handleLogout}>
+              <a href="/">Log out</a>
             </li>
             <li className="pt-2">
               <a>Consulting Services</a>
@@ -201,17 +204,17 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      <div className="navbar-end">
+      <div className="navbar-end hidden lg:flex">
 
 
 {/* -----conditional user picture----- */}
 {user ? (
-            <Link to="/" className="mr-5">
+            <Link to="/" className="lg:mr-5">
               {user ? (
                 <div className="tooltip" data-tip={user.displayName}>
                   <img
                     style={{ height: "55px" }}
-                    className="rounded-full border-4 border-red-700"
+                    className="rounded-full border-4 border-red-700 hidden lg:block"
                     src={user.photoURL}
                     alt={user.displayName}
                   />
@@ -228,14 +231,14 @@ const Navbar = () => {
           {user ? (
             <Link
               onClick={handleLogout}
-              className="red-button-outline mx-3 hidden md:block"
+              className="red-button-outline lg:mx-3 hidden lg:block"
             >
               Logout
             </Link>
           ) : (
             <Link
               to="/sign-in"
-              className="red-button-outline mx-3 hidden md:block"
+              className="red-button-outline lg:mx-3 hidden md:block"
             >
               Sign In
             </Link>
@@ -246,7 +249,7 @@ const Navbar = () => {
           ) : (
             <Link
               to="/sign-up"
-              className="red-button-outline mx-3 hidden md:block"
+              className="red-button-outline lg:mx-3 hidden md:block"
             >
               Sign Up
             </Link>

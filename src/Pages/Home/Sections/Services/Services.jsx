@@ -34,14 +34,14 @@ const Services = () => {
         <div className="p-10 rounded-xl">
           <div className="grid md:grid-cols-3 gap-10 my-16 lg:mx-32">
             {/* Single Card */}
-            {services.map((service) => (
+            {services.slice(0, 6).map((service) => (
               <ServiceCard key={service.id} service={service}></ServiceCard>
             ))}
           </div>
 
           {/* <!-- All Services Button --> */}
           <div className="flex justify-center">
-            <Link to="/services" className="mt-12">
+            <Link to="/all-services" className="mt-12">
               <button className="button uppercase mr-6  lg:mr-12">
                 See More
               </button>
