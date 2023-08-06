@@ -10,7 +10,7 @@ const AllServices = () => {
   useTitle('Services || MINDBRIDGE CONSULTANCY');
 
   useEffect(() => {
-    fetch("http://localhost:5000/all-services")
+    fetch("https://mind-bridge-consultancy-server.vercel.app/all-services")
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);

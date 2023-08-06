@@ -7,7 +7,7 @@ import ServiceCard from "./ServiceCard";
 const Services = () => {
   const [services, setServices] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/all-services")
+    fetch("https://mind-bridge-consultancy-server.vercel.app/all-services")
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);
@@ -31,7 +31,7 @@ const Services = () => {
 
       {/* <!-- Services Cards --> */}
       <div className="my-5 bg-white lg:mx-32">
-        <div className="p-10 rounded-xl">
+        <div className="p-10">
           <div className="grid md:grid-cols-3 gap-10 my-16 lg:mx-32">
             {/* Single Card */}
             {services.slice(0, 6).map((service) => (

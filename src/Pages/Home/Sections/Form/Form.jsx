@@ -2,9 +2,9 @@
 const Form = () => {
   return (
     <div className="flex justify-center items-center mb-44">
-      <div className="w-2/3">
-        <div className="md:p-20 shadow-[0px_22px_100px_4px_rgba(0,0,0,0.3)] rounded-xl">
-          <div className="p-10 md:p-0 mb-12">
+      <div className="md:w-2/3">
+        <div className="p-5 md:p-20 shadow-[0px_22px_100px_4px_rgba(0,0,0,0.3)] rounded-xl">
+          <div className="p-10 md:p-0 md:mb-12">
             <div className="">
               <p className="text-[20px]">Upgrade Your Business</p>
               <h1 className="text-5xl font-semibold py-4">
@@ -16,7 +16,7 @@ const Form = () => {
           <form >
         {/* form name and price row */}
         <div className="md:flex mb-8">
-          <div className="form-control md:w-1/2">
+          <div className="form-control md:w-1/2 mt-4">
             <label className="label">
               <span className="label-text text-[20px]"> Name</span>
             </label>
@@ -30,7 +30,7 @@ const Form = () => {
               />
             </label>
           </div>
-          <div className="form-control md:w-1/2 ml-4">
+          <div className="form-control md:w-1/2 md:ml-4 mt-4">
             <label className="label">
               <span className="label-text text-[20px]">Email</span>
             </label>

@@ -10,7 +10,7 @@ const Bookings = () => {
   useTitle('Bookings || MINDBRIDGE CONSULTANCY');
 
   useEffect(() => {
-    fetch("http://localhost:5000/bookings")
+    fetch("https://mind-bridge-consultancy-server.vercel.app/bookings")
       .then((res) => res.json())
       .then((data) => setBookings(data));
   }, []);

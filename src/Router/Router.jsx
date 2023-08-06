@@ -56,7 +56,7 @@ const router = createBrowserRouter([
           </PrivateRouter>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/all-services/${params.id}`),
+          fetch(`https://mind-bridge-consultancy-server.vercel.app/all-services/${params.id}`),
       },
     ],
   },
