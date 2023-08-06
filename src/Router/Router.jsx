@@ -4,10 +4,10 @@ import {
 import Main from "../Layouts/Main/Main";
 import Home from "../Pages/Home/Home/Home";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
-import SignIn from "../Pages/SignIn/SignIn";
-import SignUp from "../Pages/SignUp/SignUp";
 import AllServices from "../Pages/AllServices/AllServices";
 import Contact from "../Pages/Contact/Contact";
+import SignIn from "../Pages/SignIn/SignIn";
+import SignUp from "../Pages/SignUp/SignUp";
 
   const router = createBrowserRouter([
     {

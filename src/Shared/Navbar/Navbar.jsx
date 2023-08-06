@@ -1,9 +1,23 @@
-// import { useState } from "react";
+
 import "./Navbar.css"
 import { Link } from "react-router-dom";
 import  logo  from "../../../src/assets/growth.png"
+import { useContext } from "react";
+import { AuthContext } from "../../Providers/AuthProvider";
+import { FaRegUserCircle } from "react-icons/fa";
 
 const Navbar = () => {
+
+  const { user, logOut } = useContext(AuthContext);
+
+  //* <-----Log-out function-----> */
+  const handleLogout = () => {
+    logOut()
+      .then(() => {})
+      .catch((error) => console.error(error));
+  };
+  console.log(user);
+
 
   //change nav color when scrolling
 //   const [color, setColor]= useState(false);
@@ -188,8 +202,55 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <Link to="/sign-in" ><button className="red-button-outline mx-3 hidden md:block">Sign In</button></Link>
-        <Link to="/sign-up" ><button className="red-button-outline mx-3 hidden md:block">Sign Up</button></Link>
+
+
+{/* -----conditional user picture----- */}
+{user ? (
+            <Link to="/" className="mr-5">
+              {user ? (
+                <div className="tooltip" data-tip={user.displayName}>
+                  <img
+                    style={{ height: "55px" }}
+                    className="rounded-full border-4 border-red-700"
+                    src={user.photoURL}
+                    alt={user.displayName}
+                  />
+                </div>
+              ) : (
+                <FaRegUserCircle style={{ fontSize: "2.5rem" }} />
+              )}
+            </Link>
+          ) : (
+            <div></div>
+          )}
+
+          {/* -----conditional sign in sign out----- */}
+          {user ? (
+            <Link
+              onClick={handleLogout}
+              className="red-button-outline mx-3 hidden md:block"
+            >
+              Logout
+            </Link>
+          ) : (
+            <Link
+              to="/sign-in"
+              className="red-button-outline mx-3 hidden md:block"
+            >
+              Sign In
+            </Link>
+          )}
+          {/* -----conditional sign Up----- */}
+          {user ? (
+            <div></div>
+          ) : (
+            <Link
+              to="/sign-up"
+              className="red-button-outline mx-3 hidden md:block"
+            >
+              Sign Up
+            </Link>
+          )}
       </div>
     </div>
   );
