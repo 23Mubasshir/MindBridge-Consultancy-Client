@@ -1,16 +1,20 @@
 import { useEffect, useState } from "react";
 import { Slide } from "react-awesome-reveal";
 import BookingsCard from "./BookingsCard";
+import useTitle from "../../Hooks/usetitle";
 
 const Bookings = () => {
   const [bookings, setBookings] = useState([]);
+
+  //Custom title for the page
+  useTitle('Bookings || MINDBRIDGE CONSULTANCY');
 
   useEffect(() => {
     fetch("http://localhost:5000/bookings")
       .then((res) => res.json())
       .then((data) => setBookings(data));
   }, []);
-  console.log(bookings)
+  // console.log(bookings)
 
   return (
     <div>
@@ -28,7 +32,7 @@ const Bookings = () => {
           </p>
         </Slide>
       </div>
-      <div>
+      <div className="my-32">
         {/* Single Card */}
         {bookings.map((booking) => (
           <BookingsCard key={booking._id} booking={booking}></BookingsCard>

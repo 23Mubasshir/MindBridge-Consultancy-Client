@@ -7,7 +7,7 @@ import { FaGoogle } from "react-icons/fa";
 const SignUp = () => {
 
   //Custom title for the page
-  useTitle("MINDBRIDGE CONSULTANCY | Sign Up");
+  useTitle('Sign Up || MINDBRIDGE CONSULTANCY');
 
   const { createUser, signInWithGoogle, userProfileUpdating, setUser } =
     useContext(AuthContext);
@@ -25,7 +25,7 @@ const SignUp = () => {
     const photo = form.photo.value;
     const email = form.email.value;
     const password = form.password.value;
-    console.log(name, email, photo, password);
+    // console.log(name, email, photo, password);
     if (password.length < 6) {
       setError("Password has to be least 6 characters");
       return;
@@ -36,7 +36,7 @@ const SignUp = () => {
         const createdUser = result.user;
         createUser.displayName = name;
         createUser.photoURL = photo;
-        console.log(createdUser);
+        // console.log(createdUser);
         setError("");
         setSuccess("User has been Created Successfully");
         userProfileUpdating(createdUser, name, photo).then(() =>{
@@ -68,7 +68,7 @@ const SignUp = () => {
   };
 
   return (
-    <div className="">
+    <div className="bg-slate-200 sign-in-background">
       <div className="hero min-h-screen ">
         <div className="sign-in-background hero-content flex-col lg:flex-row">
           <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
@@ -144,7 +144,7 @@ const SignUp = () => {
                   <input
                     type="submit"
                     value="Sign Up"
-                    className="btn bg-red-700 text-white hover:text-black"
+                    className="btn bg-red-700 text-white hover:bg-black"
                   />
                 </div>
               </form>
@@ -154,7 +154,7 @@ const SignUp = () => {
                 <h1 className="pb-3 text-neutral-500">Sign Up with </h1>
                 <button
                   onClick={handleGoogleSignUp}
-                  className="btn bg-red-700 text-white hover:text-black btn-block"
+                  className="btn bg-red-700 text-white hover:bg-black btn-block"
                 >
                   <FaGoogle />
                   <span className="mx-2"> Google</span>

@@ -6,7 +6,6 @@ import "./Slider.css";
 const Slider = () => {
   return (
     <div>
-      {/* To-do: Make ato slide and change the first content text */}
       <div className="carousel w-full h-[600px] md:h-[700px] lg:h-[1000px]">
         {/* ----- Slide-1 ----- */}
         <div id="slide1" className="carousel-item relative w-full">
@@ -14,10 +13,10 @@ const Slider = () => {
           <div className="absolute w-full h-full flex items-center bg-gradient-to-r from-[rgba(0,0,0,0.7)] to-[rgba(0,0,0,0.2)] ">
             <div className="lg:w-2/3 p-20 md:ps-32 lg:ps-64">
               <h2 className="text-5xl md:text-7xl  text-white pb-10">
-                We help clients solve complex problems.
+              We help clients to resolve complex problems. 
               </h2>
-              <p className="md:text-2xl text-white pb-16">
-                WE CAN TAP INTO OUR COLLECTIVE MINDSHARE
+              <p className="md:text-2xl text-white pb-16 uppercase">
+              Our goal is to help clients to make their businesses Top Notch.
               </p>
               <button className="button uppercase mr-6  lg:mr-12">
                 Learn More
@@ -49,10 +48,10 @@ const Slider = () => {
           <div className="absolute w-full h-full flex items-center bg-gradient-to-r from-[rgba(0,0,0,0.7)] to-[rgba(0,0,0,0.2)] ">
             <div className="lg:w-2/3 p-20 md:ps-32 lg:ps-64">
               <h2 className="text-5xl md:text-7xl  text-white pb-10">
-                Super advisor to give you the best advice!
+                Super advisors and amazing team are always with you. 
               </h2>
-              <p className="md:text-2xl text-white pb-16">
-                SO YOU CAN FOCUS ON THE PRESENT
+              <p className="md:text-2xl text-white pb-16 uppercase">
+                So that you don&apos;t face any obstacles in your way.
               </p>
               <button className="button uppercase mr-6  lg:mr-12">
                 Learn More
@@ -86,7 +85,7 @@ const Slider = () => {
               <h2 className="text-5xl md:text-7xl  text-white pb-10">
                 Our team is dedicated and always available for your business.
               </h2>
-              <p className="md:text-2xl text-white pb-16">
+              <p className="md:text-2xl text-white pb-16 uppercase">
                 We have experience handling large scale business.
               </p>
               <button className="button uppercase mr-6  lg:mr-12">
@@ -119,10 +118,10 @@ const Slider = () => {
           <div className="absolute w-full h-full flex items-center bg-gradient-to-r from-[rgba(0,0,0,0.7)] to-[rgba(0,0,0,0.2)] ">
             <div className="lg:w-2/3 p-20 md:ps-32 lg:ps-64">
               <h2 className="text-5xl md:text-7xl  text-white pb-10">
-                We Progress Through Movements With Meaning.
+                We Progress Through Best Strategy and Planing.
               </h2>
-              <p className="md:text-2xl text-white pb-16">
-                WHAT MAKES A PRODUCT A MOVEMENT.
+              <p className="md:text-2xl text-white pb-16 uppercase">
+                WHAT MAKES A like to make an impact on you sector.
               </p>
               <button className="button uppercase mr-6  lg:mr-12">
                 Learn More

@@ -1,4 +1,6 @@
+
 import CompanySuccess from "../Sections/CompanySuccess/CompanySuccess";
+import Form from "../Sections/Form/Form";
 import HonorableClient from "../Sections/HonorableClient/HonorableClient";
 import OneToOneSession from "../Sections/OnetoOneSession/OnetoOneSession";
 import Services from "../Sections/Services/Services";
@@ -13,6 +15,7 @@ const Home = () => {
       <Services></Services>
       <OneToOneSession></OneToOneSession>
       <CompanySuccess></CompanySuccess>
+      <Form></Form>
       {/* <Testimonials></Testimonials> */}
       <HonorableClient></HonorableClient>
     </div>

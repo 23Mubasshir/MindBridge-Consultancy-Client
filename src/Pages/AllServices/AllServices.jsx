@@ -1,10 +1,14 @@
 import { Slide } from "react-awesome-reveal";
 import { useEffect, useState } from "react";
 import ServiceCard from "../Home/Sections/Services/ServiceCard";
+import useTitle from "../../Hooks/usetitle";
 
 
 const AllServices = () => {
   const [services, setServices] = useState([]);
+
+  useTitle('Services || MINDBRIDGE CONSULTANCY');
+
   useEffect(() => {
     fetch("http://localhost:5000/all-services")
       .then((res) => res.json())

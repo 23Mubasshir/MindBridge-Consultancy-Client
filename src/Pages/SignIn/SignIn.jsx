@@ -7,7 +7,7 @@ import { AuthContext } from "../../Providers/AuthProvider";
 const SignIn = () => {
 
     //Custom title for the page
-    useTitle('MINDBRIDGE CONSULTANCY | Sign In');
+    useTitle('Sign In || MINDBRIDGE CONSULTANCY');
 
 
   const { signIn, signInWithGoogle } = useContext(AuthContext);
@@ -16,7 +16,7 @@ const SignIn = () => {
   // ----- Navigate After login -----
   const navigate = useNavigate();
   const location = useLocation();
-  console.log('login page location', location)
+  // console.log('login page location', location)
   const from = location.state?.from?.pathname || '/'
 
   // -----Success and error message -----
@@ -29,7 +29,7 @@ const SignIn = () => {
     const form = event.target;
     const email = form.email.value;
     const password = form.password.value;
-    console.log(email, password);
+    // console.log(email, password);
     setError("");
     form.reset();
 
@@ -63,10 +63,11 @@ const SignIn = () => {
         console.log(error.message);
       });
   };
+  
   return (
-    <div>
-      <div className="hero min-h-screen ">
-        <div className="hero-content flex-col lg:flex-row">
+    <div className="bg-slate-200 sign-in-background" >
+      <div className="hero min-h-screen">
+        <div className="hero-content flex-col lg:flex-row ">
           <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
             <div className="card-body">
               <h1 className="text-5xl font-bold text-center">Sign In</h1>
@@ -116,7 +117,7 @@ const SignIn = () => {
                   <input
                     type="submit"
                     value="Sign In"
-                    className="btn bg-red-700 text-white hover:text-black"
+                    className="btn bg-red-700 text-white hover:bg-black"
                   />
                 </div>
               </form>
@@ -126,7 +127,7 @@ const SignIn = () => {
                 <h1 className="pb-3 text-neutral-500">Sign In with </h1>
                 <button
                   onClick={handleGoogleSignIn}
-                  className="btn bg-red-700 text-white hover:text-black btn-block"
+                  className="btn bg-red-700 text-white hover:bg-black btn-block"
                 >
                   <FaGoogle />
                   <span className="mx-2"> Google</span>

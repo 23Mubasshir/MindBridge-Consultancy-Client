@@ -1,7 +1,6 @@
 const Footer = () => {
   return (
     <div>
-      {/* To-Do: update image background, add logo */}
       <div className="md:h-[300px] bg-[---primary-color] grid md:grid-cols-2 py-12">
         <div className="text-center my-auto mb-24 md:mb-0">
           <h1
@@ -55,7 +54,7 @@ const Footer = () => {
               <input
                 type="text"
                 placeholder="username@site.com"
-                className="input w-full pr-16 rounded-none border-none"
+                className="input w-full pr-16 rounded-none border-none text-black"
               />
               <button className="btn bg-[---primary-color] border-none rounded-none text-white absolute top-0 right-0 hover:text-black">
                 Subscribe

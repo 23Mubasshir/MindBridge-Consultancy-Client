@@ -14,7 +14,6 @@ const Navbar = () => {
       .then(() => {})
       .catch((error) => console.error(error));
   };
-  
 
   //change nav color when scrolling
   //   const [color, setColor]= useState(false);
@@ -62,8 +61,8 @@ const Navbar = () => {
               <a href="/sign-up">Sign Up</a>
             </li>
             <li className="pt-2">
-            <a href="/bookings">Bookings</a>
-          </li>
+              <a href="/bookings">Bookings</a>
+            </li>
             <li className="pt-2" onClick={handleLogout}>
               <a href="/">Log out</a>
             </li>
@@ -96,23 +95,25 @@ const Navbar = () => {
               </ul>
             </li>
             <li>
-              <a>About</a>
+              <a href="/all-services">Services</a>
             </li>
             <li>
               <a href="/bookings">Bookings</a>
             </li>
           </ul>
         </div>
-        <div className="flex justify-center">
-          <img src={logo} alt="" className=" w-[60px] h-[60px] mx-2" />
+        <div className="flex justify-center items-center">
+          <div className="flex">
+            <img src={logo} alt="" className=" w-[60px] h-[60px] mx-2" />
 
-          <h1 className="text-center font-bold md:text-[28px] text-[20px] md:leading-8 ">
-            {" "}
-            <span className="text-red-700 text-[20px] md:text-[30px]">
-              MINDBRIDGE
-            </span>{" "}
-            <br /> CONSULTANCY
-          </h1>
+            <h1 className="text-center font-bold md:text-[28px] text-[20px] md:leading-8 ">
+              {" "}
+              <span className="text-red-700 text-[20px] md:text-[30px]">
+                MINDBRIDGE
+              </span>{" "}
+              <br /> CONSULTANCY
+            </h1>
+          </div>
         </div>
       </div>
       <div className="navbar-center hidden lg:flex">
@@ -153,12 +154,11 @@ const Navbar = () => {
             </details>
           </li>
           <li>
-            <a>About</a>
-          </li>
+              <a href="/all-services">Services</a>
+            </li>
           <li>
             <a href="/bookings">Bookings</a>
           </li>
-          
         </ul>
       </div>
       <div className="navbar-end hidden lg:flex">

@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 
-
 const ServiceCard = ({ service }) => {
-  const {_id, name, short_description, image } = service;
+  const { _id, name, short_description, image } = service;
   return (
     // Single card
     <div className="img__wrap">
@@ -16,14 +15,15 @@ const ServiceCard = ({ service }) => {
         {name}
       </p>
       {/* Card Description */}
-      <div className="img__description p-10">
-        <p className="text-3xl mb-4">{name}</p>
-        <span className="">
-          {short_description}
-        </span>
-        <div className="text-center mt-[20px]">
-        <Link to={`/checkout/${_id}`}>
-        <button className="button-outline" >Learn More</button></Link>
+      <div className="img__description p-10 flex justify-center items-center">
+        <div>
+          <p className="text-3xl mb-4">{name}</p>
+          <span className="">{short_description}</span>
+          <div className="mt-[20px]">
+            <Link to={`/checkout/${_id}`}>
+              <button className="button-outline">Book a Session</button>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

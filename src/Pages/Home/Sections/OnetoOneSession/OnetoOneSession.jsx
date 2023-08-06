@@ -3,7 +3,7 @@ import logo from "../../../../assets/growth.png";
 const OneToOneSession = () => {
   return (
     <div>
-      <div className="hero min-h-screen ">
+      <div className="hero min-h-screen">
         <div className="hero-content grid grid-cols-1 lg:grid-cols-2 md:p-20 shadow-[0px_22px_100px_4px_rgba(0,0,0,0.3)]  rounded-xl">
           <div className="p-10 md:p-0">
             <div className="flex mb-20 justify-center">
